@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Speech Recognition</title>
+    
+</head>
+<div class="container">
+    <div class="justify-content-center align-items-center">
+        <div class="col">
+
+            <body>
+
+                <h1 class="text-center">Speech Recognition</h1>
+
+                <div class="cartoonContainer">
+                    <div class="col text-center">
+                        <p>Click the Start button and Say "Color" Followed by a color. Or click the Start and say "Size" followed by a number.</p>
+                    </div>
+                    
+                    <div class = 'col text-center box'>
+                        <label for = "dia">Size</label>
+                        <input id = 'dia' name = "dia" type="number" onchange="change();">
+
+                        <label for = "color"> Color</label>
+                        <input id = 'color' name = "color" type="text" onchange="change();">
+
+                        <div class="col text-center msgDiv">
+                            <p id = "msg"></p>
+                        </div>
+
+                        <div class = "btnDiv2 text-center">
+                            <button type="button" class="btn btn-primary" id="rec" onclick="record()">Start</button>
+                        </div>
+                    </div>
+
+                    <div id="cartoonArea" class="cartoonArea justify-content-center">
+                        
+                        
+
+                        <canvas id="mycanvas" width="600" height="600"></canvas>
+                    </div>
+                </div>
+
+                <div class = "btnDiv text-center">
+                    <button type="button" class="btn btn-primary" id="fixed" onclick="window.location.href='https://cisc3610.github.io/Portfolio_CISC3610/';">Back to Portfolio</button>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+                    crossorigin="anonymous"></script>
+                    <script src="script.js"></script>
+            </body>
+        </div>
+    </div>
+</div>
+
+</html>
